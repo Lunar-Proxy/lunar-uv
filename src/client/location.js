@@ -62,7 +62,7 @@ class LocationApi extends EventEmitter {
 						? function (val) {
 								switch (key) {
 									case "href":
-										that.location.href = wrap(val);
+										window.urlchange((console.log(wrap(val))))
 										break;
 									case "hash":
 										that.emit(
